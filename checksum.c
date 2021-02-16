@@ -22,14 +22,14 @@ int main (int argc, char * argv[], char ** envp) {
   int STDIN = 0;  
   byte checksum; 
   byte complement;
-  byte remainder;
-  byte quotient;
+  int remainder;
+  int quotient;
   byte header[10];
 
   /* the following is the prototype for the read system call */
   //int read(int fildes, void *buf, size_t nbyte); 
 
-  int result = read(STDIN, (void*) &header, count);
+  read(STDIN, &header, count);
 
   for(int i = 0; i < count; i++)
   {
