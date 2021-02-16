@@ -33,7 +33,7 @@ int main (int argc, char * argv[], char ** envp) {
 
   for(int i = 0; i < count; i++)
   {
-    if( i == 6)
+    if( i == 5)
     {
       checksum = header[i];
       header[i] = 0;
