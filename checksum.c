@@ -29,6 +29,14 @@ int main (int argc, char * argv[], char ** envp) {
 
   int read(STDIN, (void*) &header, count);
 
+  for(int i = 0; i < count; i++)
+  {
+    if( i == 6)
+    {
+      checksum = header[i];
+      header[i] = 0;
+    }
+  }
   
 
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
