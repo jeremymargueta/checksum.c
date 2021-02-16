@@ -22,6 +22,8 @@ int main (int argc, char * argv[], char ** envp) {
   int STDIN = 0;  
   byte checksum; 
   byte complement;
+  byte remainder;
+  byte quotient;
   byte header[10];
 
   /* the following is the prototype for the read system call */
@@ -37,7 +39,18 @@ int main (int argc, char * argv[], char ** envp) {
       header[i] = 0;
     }
   }
-  
+
+  for(int i = 0; i < count; i++)
+  {
+    sum += header[i];
+  }
+
+  quotient = sum / (max_int+1);
+  remainder = sum % (max_int+1);
+  sum = quotient + remainder;
+
+  complement = max_int - sum;
+
 
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
   if (checksum != complement ) {
