@@ -27,7 +27,7 @@ int main (int argc, char * argv[], char ** envp) {
   /* the following is the prototype for the read system call */
   //int read(int fildes, void *buf, size_t nbyte); 
 
-  int read(STDIN, void* &header, count);
+  int read(STDIN, (void*) &header, count);
 
   
 
