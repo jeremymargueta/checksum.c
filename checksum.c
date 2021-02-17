@@ -50,11 +50,11 @@ int main (int argc, char * argv[], char ** envp) {
 
 
   quotient = sum / (max_int+1);
-  println("%d", quotient);
+  fprintf("%d", quotient);
   remainder = sum % (max_int+1);
-  println("%d", remainder);
+  fprintf("%d", remainder);
   sum = quotient + remainder;
-  println("%d", sum); 
+  fprintf("%d", sum); 
 
   complement = max_int - sum;
 
