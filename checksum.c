@@ -31,7 +31,7 @@ int main (int argc, char * argv[], char ** envp) {
   /* the following is the prototype for the read system call */
   //int read(int fildes, void *buf, size_t nbyte); 
 
-  retval = read(STDIN_FILENO, &header, count);
+  read(STDIN_FILENO, &header, 10);
 
   for(int i = 1; i <= count; i++)
   {
@@ -40,12 +40,9 @@ int main (int argc, char * argv[], char ** envp) {
       checksum = header[i];
       header[i] = 0;
     }
+     sum += header[i];
   }
 
-  for(int i = 0; i <= count; i++)
-  {
-    sum += header[i];
-  }
 
   quotient = sum / (max_int+1);
   remainder = sum % (max_int+1);
