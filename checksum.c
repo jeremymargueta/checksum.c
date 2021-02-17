@@ -23,8 +23,8 @@ int main (int argc, char * argv[], char ** envp) {
   int STDIN = 0;  
   byte checksum; 
   byte complement;
-  int remainder;
-  int quotient;
+  byte remainder;
+  byte quotient;
   byte header[10];
   int retval;
   /* the following is the prototype for the read system call */
