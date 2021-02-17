@@ -49,8 +49,10 @@ int main (int argc, char * argv[], char ** envp) {
   }
 
 
-  quotient = sum / (max_int);
-  remainder = sum % (max_int);
+  quotient = sum / (max_int+1);
+  printf("%d", quotient);
+  remainder = sum % (max_int+1);
+  printf("%d", remainder);
   sum = quotient + remainder;
   printf("%d", sum); 
 
