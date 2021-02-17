@@ -50,9 +50,9 @@ int main (int argc, char * argv[], char ** envp) {
 
 
   quotient = sum / (max_int+1);
-  fprintf(quotient);
+  fprintf(stdout, "Num", quotient);
   remainder = sum % (max_int+1);
-  fprintf(, remainder);
+  fprintf(remainder);
   sum = quotient + remainder;
   fprintf("%d", sum); 
 
