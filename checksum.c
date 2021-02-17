@@ -23,8 +23,8 @@ int main (int argc, char * argv[], char ** envp) {
   int STDIN = 0;  
   byte checksum; 
   byte complement;
-  byte remainder;
-  byte quotient;
+  int remainder;
+  int quotient;
   byte header[10];
   int retval;
   /* the following is the prototype for the read system call */
@@ -47,7 +47,7 @@ int main (int argc, char * argv[], char ** envp) {
     }
      sum += header[i];
   }
-
+  printf("%d", sum);
 
   quotient = sum / (max_int+1);
   
