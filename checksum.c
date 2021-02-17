@@ -27,11 +27,11 @@ int main (int argc, char * argv[], char ** envp) {
   int remainder;
   int quotient;
   byte header[10];
-
+  int retval;
   /* the following is the prototype for the read system call */
   //int read(int fildes, void *buf, size_t nbyte); 
 
-  read(0, &header, 10);
+  retval = read(STDIN, &header, 10);
 
   for(int i = 1; i <= count; i++)
   {
