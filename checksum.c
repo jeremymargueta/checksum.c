@@ -1,5 +1,5 @@
 /********************************/
-/* Program Name:                */
+/* Program Name:Jeremy Argueta  */
 /* Author:                      */
 /* Date:                        */
 /********************************/
@@ -31,7 +31,7 @@ int main (int argc, char * argv[], char ** envp) {
   /* the following is the prototype for the read system call */
   //int read(int fildes, void *buf, size_t nbyte); 
 
-  read(STDIN_FILENO, &header, 10);
+  read(0, &header, 10);
 
   for(int i = 1; i <= count; i++)
   {
