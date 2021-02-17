@@ -12,7 +12,6 @@
 #include "stdlib.h"
 #include <unistd.h>
 #include <sys/types.h>
-#include <sys/uio.h>
 
 #define max_int (255)
 #define byte unsigned char
@@ -32,6 +31,12 @@ int main (int argc, char * argv[], char ** envp) {
   //int read(int fildes, void *buf, size_t nbyte); 
 
   retval = read(STDIN, &header, 10);
+
+  for(int i = 0; i < count; i++ )
+  {
+    printf("%d", header[i]);
+    printf("\n")
+  }
 
   for(int i = 1; i <= count; i++)
   {
