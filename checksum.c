@@ -32,11 +32,11 @@ int main (int argc, char * argv[], char ** envp) {
 
   retval = read(STDIN, &header, 10);
 
-  for(int i = 0; i < count; i++ )
-  {
-    printf("%d", header[i]);
-    printf("\n");
-  }
+  // for(int i = 0; i < count; i++ )
+  // {
+  //   printf("%d", header[i]);
+  //   printf("\n");
+  // }
 
   for(int i = 0; i <= count; i++)
   {
