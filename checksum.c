@@ -47,14 +47,13 @@ int main (int argc, char * argv[], char ** envp) {
     }
      sum += header[i];
   }
-  printf("%d", sum);
+  
 
   quotient = sum / (max_int+1);
   
   remainder = sum % (max_int+1);
   
   sum = quotient + remainder;
-  printf("%d", sum); 
 
   complement = max_int - sum;
 
