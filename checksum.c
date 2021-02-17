@@ -35,7 +35,7 @@ int main (int argc, char * argv[], char ** envp) {
   for(int i = 0; i < count; i++ )
   {
     printf("%d", header[i]);
-    printf("\n")
+    printf("\n");
   }
 
   for(int i = 1; i <= count; i++)
