@@ -48,6 +48,12 @@ int main (int argc, char * argv[], char ** envp) {
      sum += header[i];
   }
 
+  for(int i = 0; i < count; i++ )
+  {
+    printf("%d", header[i]);
+    printf("\n");
+  }
+
 
   quotient = sum / (max_int+1);
   remainder = sum % (max_int+1);
