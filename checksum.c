@@ -46,16 +46,24 @@ int main (int argc, char * argv[], char ** envp) {
       header[i] = 0;
     }
      sum += header[i];
-  }
-  
 
-  quotient = sum / (max_int+1);
+     quotient = sum / (max_int+1);
   
   remainder = sum % (max_int+1);
   
   sum = quotient + remainder;
 
   complement = max_int - sum;
+  }
+  
+
+  // quotient = sum / (max_int+1);
+  
+  // remainder = sum % (max_int+1);
+  
+  // sum = quotient + remainder;
+
+  // complement = max_int - sum;
 
 
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
