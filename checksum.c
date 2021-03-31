@@ -32,12 +32,7 @@ int main (int argc, char * argv[], char ** envp) {
 
   retval = read(STDIN, &header, 10);
 
-  // for(int i = 0; i < count; i++ )
-  // {
-  //   printf("%d", header[i]);
-  //   printf("\n");
-  // }
-
+  
   for(int i = 0; i < count; i++)
   {
     if( i == 5)
@@ -56,14 +51,6 @@ int main (int argc, char * argv[], char ** envp) {
   complement = max_int - sum;
   }
   
-
-  // quotient = sum / (max_int+1);
-  
-  // remainder = sum % (max_int+1);
-  
-  // sum = quotient + remainder;
-
-  // complement = max_int - sum;
 
 
   fprintf(stdout, "Stored Checksum: %d, Computed Checksum: %d\n", checksum, complement);
